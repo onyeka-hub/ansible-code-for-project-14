@@ -9,11 +9,11 @@
 - python3 -m pip install mysql-connector-python
 - python3 -m pip install psycopg2==2.7.5 --ignore-installed
 
-#### Installing  JAVA
+#### Installing  JAVA on the jenkins server
 ====================================
 - sudo yum install java-11-openjdk-devel -y
 
-##### open the bash profile 
+##### open the bash profile on the jenkins server
 vi .bash_profile 
 
 ##### paste the below in the bash profile
