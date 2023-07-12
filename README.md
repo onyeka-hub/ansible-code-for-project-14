@@ -29,7 +29,7 @@ export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
 source ~/.bash_profile
 
 
-##### Install  php
+##### Install php on redhat
 =====================================
 - yum module reset php -y
 - yum module enable php:remi-7.4 -y
@@ -64,10 +64,13 @@ source ~/.bash_profile
 
 #### for database connection
 ====================================
+
 DB_CONNECTION=mysql
+
 DB_PORT=3306
 
 sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+
 sudo yum install mysql -y
 
 Learn how to install Jenkins [here](https://www.jenkins.io/doc/book/installing/)
@@ -75,7 +78,7 @@ Learn how to install Jenkins [here](https://www.jenkins.io/doc/book/installing/)
 Learn how to installk artifactory [here](https://jfrog.com/open-source/)
 
 
-#### JEnkinsfile for Quick Task
+#### Jenkinsfile for Quick Task
 ==================================
 
 ```
@@ -135,12 +138,19 @@ Learn how to installk artifactory [here](https://jfrog.com/open-source/)
 
 #### sonar properties
 ===================================
+
 sonar.host.url=http://3.125.17.131:9000/sonar/
+
 sonar.projectKey=php-todo
+
 #----- Default source code encoding
+
 sonar.sourceEncoding=UTF-8
+
 sonar.php.exclusions=**/vendor/**
+
 sonar.php.coverage.reportPaths=build/logs/clover.xml
+
 sonar.php.tests.reportPath=build/logs/junit.xml
 
 
