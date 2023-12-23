@@ -8,7 +8,7 @@
 # 172.31.16.117 ansible_ssh_user='ubuntu'
 
 [artifactory]
-52.91.123.88 ansible_ssh_user='ec2-user'
+23.22.51.11 ansible_ssh_user='ubuntu'
 
 
 # [db]
